@@ -1,0 +1,31 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.hidden({
+    id: model.handle ~ 'handle',
+    name: model.handle ~ '[handle]',
+    value: model.handle is defined ? model.handle
+    })
+}}
+
+<div id="{{ model.handle }}-mode" class="codeblocks">
+
+{{ forms.selectField({
+    id: model.handle ~ 'mode',
+    name: model.handle ~ '[mode]',
+    options: modes,
+    value: mode is defined ? mode : model.mode is defined ? model.mode
+}) }}
+
+</div>
+
+<div id="{{ name }}Container" class="ace-container field" style="height: {{ settings.height }}px;">
+    <div id="{{ name }}Field"  class="ace-editor" data-container-id="{{ name }}Container">{{ model.text }}</div>
+</div>
+
+{{ forms.textarea({
+    id: model.handle,
+    name: model.handle ~ '[text]',
+    value: model.text is defined ? model.text
+})
+}}
+

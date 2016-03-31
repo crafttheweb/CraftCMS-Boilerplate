@@ -21,6 +21,12 @@ craft/storage/runtime/*
 craft/storage/backups/*
 
 
+# GENERATED FILES
+# ------------------------------------------------------------
+public/js/*
+public/css/*
+
+
 # MISC FILES
 # ------------------------------------------------------------
 .DS_Store
