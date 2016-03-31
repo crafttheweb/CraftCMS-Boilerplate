@@ -1,8 +1,6 @@
 CraftCMS Boilerplate
 ==============================
 
-**Due to some reasons given by P&T the /craft/app folder has been removed, make sure if you clone this repo to replace that folder from the base craft download**
-
 ### Installation
 1. First create local database
 2. Create db.php and general.php files within /craft/config/local/
@@ -51,15 +49,13 @@ CraftCMS Boilerplate
 Now that you've put the correct database credentials in db.php, head on over to /admin and if all is well will start the installation process
 
 
-### Gulpjs
+### Brunch
 If you don't already have Node installed head over to http://nodejs.org/download/
 via the command line:
 
-1. Install gulp `npm install -g gulp`
+1. Install gulp `npm install -g brunch`
 2. Install gulp modules defined in package.json `npm install`
-3. Gulp away by running `gulp`
-
-feel free to modify the .scss-lint.yml file to your hearts content on how to lint you scss files.
+3. Brunch away by running `brunch`
 
 
 ### .htaccess and .gitignore
