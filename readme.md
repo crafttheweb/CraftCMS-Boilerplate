@@ -71,20 +71,21 @@ The default .gitignore file is setup to track unecessary folders and files, most
 Example:
 
     templates/
-      _helpers/
-      _partials/
-        _share-button.twig
-        _gallery-item.twig
-      products/
-        index/
-          index.twig
-          _item.twig
-        detail/
-          entry.twig
-          _product-image.twig
-      _html.twig
-      _layout.twig
-      index.twig
+    |
+    |- _helpers/
+    |- _partials/
+    |    |- _share-button.twig
+    |    |- _gallery-item.twig
+    |-  products/
+    |    |- index/
+    |    |   |- index.twig
+    |    |   |- _item.twig
+    |    |- detail/
+    |    |   |- entry.twig
+    |    |   |- _product-image.twig
+    |- _html.twig
+    |- _layout.twig
+    |- index.twig
 
 ### Sass
 Use the [7-1 principle](http://sass-guidelin.es/#the-7-1-pattern).
