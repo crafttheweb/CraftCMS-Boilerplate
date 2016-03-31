@@ -61,3 +61,78 @@ via the command line:
 ### .htaccess and .gitignore
 The default .htaccess is packed with a bunch of goodies, again feel free to modify to your hearts content. Just make sure to add a period before the file name to make sure its read properly.
 The default .gitignore file is setup to track unecessary folders and files, most of it involves not tracking random config files computers will add, as well as node_modules and some stuff within the craft/storage folder
+
+### Templates
+- Place each page or main section in a subfolder
+   - Inside, use subfolders `detail/` and `index/` for master/child views and place all corresponding templates and partials inside
+- Put shared components under `_partials/`
+- Name all directly accessible components with a normal filename template.twig and all non-standalone partials with a underscore prefix: `_share-button.twig`
+
+Example:
+
+    templates/
+      _helpers/
+      _partials/
+        _share-button.twig
+        _gallery-item.twig
+      products/
+        index/
+          index.twig
+          _item.twig
+        detail/
+          entry.twig
+          _product-image.twig
+      _html.twig
+      _layout.twig
+      index.twig
+
+### Sass
+Use the [7-1 principle](http://sass-guidelin.es/#the-7-1-pattern).
+
+Example:
+
+    sass/
+    |
+    |– abstracts/
+    |   |– _variables.scss    # Sass Variables
+    |   |– _functions.scss    # Sass Functions
+    |   |– _mixins.scss       # Sass Mixins
+    |   |– _placeholders.scss # Sass Placeholders
+    |
+    |– base/
+    |   |– _reset.scss        # Reset/normalize
+    |   |– _typography.scss   # Typography rules
+    |   …                     # Etc.
+    |
+    |– components/
+    |   |– _buttons.scss      # Buttons
+    |   |– _carousel.scss     # Carousel
+    |   |– _cover.scss        # Cover
+    |   |– _dropdown.scss     # Dropdown
+    |   …                     # Etc.
+    |
+    |– layout/
+    |   |– _navigation.scss   # Navigation
+    |   |– _grid.scss         # Grid system
+    |   |– _header.scss       # Header
+    |   |– _footer.scss       # Footer
+    |   |– _sidebar.scss      # Sidebar
+    |   |– _forms.scss        # Forms
+    |   …                     # Etc.
+    |
+    |– pages/
+    |   |– _home.scss         # Home specific styles
+    |   |– _contact.scss      # Contact specific styles
+    |   …                     # Etc.
+    |
+    |– themes/
+    |   |– _theme.scss        # Default theme
+    |   |– _admin.scss        # Admin theme
+    |   …                     # Etc.
+    |
+    |– vendors/
+    |   |– _bootstrap.scss    # Bootstrap
+    |   |– _jquery-ui.scss    # jQuery UI
+    |   …                     # Etc.
+    |
+    `– main.scss              # Main Sass file
