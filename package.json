@@ -1,29 +1,24 @@
 {
-  "package_name": "CraftCMS Boilerplate",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Gulp modules for an awesome front-end build tool",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/belief/CraftCMS-Boilerplate"
-  },
-  "dependencies": {
-    "gulp": "^3.6.0",
-    "gulp-autoprefixer": "0.0.7",
-    "gulp-clean": "^0.2.4",
-    "gulp-imagemin": "^0.2.0",
-    "gulp-jshint": "^1.5.3",
-    "gulp-livereload": "^1.2.0",
-    "gulp-minify-css": "^0.3.1",
-    "gulp-notify": "^1.2.5",
-    "gulp-rename": "^1.2.0",
-    "gulp-sass": "^0.7.1",
-    "gulp-concat": "^2.2.0",
-    "gulp-uglify": "^0.2.1",
-    "gulp-util": "^2.2.14",
-    "tiny-lr": "0.0.5",
-    "gulp-scsslint": "0.0.4",
-    "chalk": "^0.4.0",
-    "map-stream": "^0.1.0"
-  }
+    "package_name": "Craft CMS Boilerplate for Brunch",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Frontend workform for Craft CMS using Brunch",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/crafttheweb/CraftCMS-Boilerplate"
+    },
+    "dependencies": {
+        "autoprefixer": "^5.2.0",
+        "browser-sync-brunch": "0.0.9",
+        "brunch": "^2.5.3",
+        "clean-css-brunch": "^2.0.0",
+        "css-brunch": "^1.7.0",
+        "foundation-sites": "^6.2.0",
+        "javascript-brunch": "^1.7.1",
+        "jquery": "^1.12.1",
+        "motion-ui": "^1.2.2",
+        "postcss-brunch": "^0.5.0",
+        "sass-brunch": "^1.8.11",
+        "scut": "^1.4.0"
+    }
 }
