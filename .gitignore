@@ -43,3 +43,4 @@ dwsync.xml
 logs/*
 node_modules
 /vendor/
+.env

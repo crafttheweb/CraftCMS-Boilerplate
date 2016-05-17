@@ -14,18 +14,10 @@ $customDbConfig = array(
   	'tablePrefix' 	=> 'craft',
 
   	// Live database info
-  	'server' 		=> 'localhost',
-		'user' 			=> 'username',
-		'password' 	=> 'password',
-		'database' 	=> 'database_name'
-  ),
-
-  // Dev database info
-	'staging.' => array(
-  	'server' 		=> 'localhost',
-		'user' 			=> 'username',
-		'password' 	=> 'password',
-		'database' 	=> 'database_name'
+    'server' => getenv('DB_HOST'),
+    'user' => getenv('DB_USER'),
+    'password' => getenv('DB_PASS'),
+    'database' => getenv('DB_NAME'),
   )
 
 );
