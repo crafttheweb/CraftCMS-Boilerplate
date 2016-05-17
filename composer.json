@@ -1,0 +1,13 @@
+{
+    "name": "thefold/craft-cms-boilerplate",
+    "description": "Starter project for Craft CMS Projects",
+    "authors": [
+        {
+            "name": "Darren Wood",
+            "email": "darren@thefold.co.nz"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^2.0"
+    }
+}

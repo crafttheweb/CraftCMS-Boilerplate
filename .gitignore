@@ -42,3 +42,4 @@ _notes
 dwsync.xml
 logs/*
 node_modules
+/vendor/
